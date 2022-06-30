@@ -24,11 +24,12 @@ public class Student {
                 + ", is alive = " + (alive ? "yes" : "no");
     }
 
-    public Student(String n, int a, double m, boolean al) {
-        name = n;
-        age = a;
-        mark = m;
-        alive =al;
+    // full constructor with params/args
+    public Student(String name, int age, double mark, boolean alive) {
+        this.name = name;
+        this.age = age;
+        this.mark = mark;
+        this.alive = alive;
     }
 
     public Student(double m) {
