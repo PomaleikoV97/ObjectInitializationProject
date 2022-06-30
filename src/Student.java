@@ -1,9 +1,12 @@
 public class Student {
     public String name;
     public int age;
-    public double mark;
+    public double mark = 4;
     public boolean alive;
-    public Student() {
+
+
+
+        public Student() {
         name = "no name";
         age = 16;
         mark = 4;
@@ -24,7 +27,7 @@ public class Student {
                 + ", is alive = " + (alive ? "yes" : "no");
     }
 
-    // full constructor with params/args
+//    // full constructor with params/args
     public Student(String name, int age, double mark, boolean alive) {
         this.name = name;
         this.age = age;
@@ -35,6 +38,5 @@ public class Student {
     public Student(double m) {
         mark = m;
     }
-
 
 }
