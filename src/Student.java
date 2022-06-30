@@ -9,6 +9,13 @@ public class Student {
         mark = 4;
         alive = true;
     }
+    public Student(Student student) {
+        name = student.name;
+        age = student.age;
+        mark = student.mark;
+        alive = student.alive;
+    }
+
 
 //    default constructor
     public String getInfo() {
@@ -23,4 +30,10 @@ public class Student {
         mark = m;
         alive =al;
     }
+
+    public Student(double m) {
+        mark = m;
+    }
+
+
 }
